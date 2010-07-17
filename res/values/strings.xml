@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">bookdroid</string>
+	<string name="book_editor">New Book</string>
+	<string name="comments">Comments</string>
+	<string name="delete">Delete All</string>
+	<string name="delete_item">Delete</string>
+	<string name="discard">Discard</string>
+	<string name="edit_item">Edit</string>
+	<string name="hello">Showing all the books!</string>
+	<string name="insert">Add New</string>
+	<string name="isbn">ISBN</string>
+	<string name="load">Load</string>
+	<string name="save">Save</string>
+	<string name="title">Title</string>
+	<string name="vote_item">Vote Item</string>
+	<string name="nobooks">No Books!</string>
+	<string name="tweet">Tweet</string>
+	<string name="vote">Vote</string>
+	<string name="read">Read</string>
+	<string name="owned">Owned</string>
+<string name="author">Author</string>
+<string name="publisher">Publisher</string>
+<string name="date">Date</string>
+<string name="pages">Pages</string>
+<string name="search">Search</string>
+
+
+<string name="cancel_label">Cancel</string>
+<string name="search_label">Searching...</string>
+</resources>

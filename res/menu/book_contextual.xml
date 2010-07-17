@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<group android:id="@+id/bookcontextual">
+		<item android:id="@+id/edititem" android:title="@string/edit_item"></item>
+		<item android:id="@+id/deleteitem" android:title="@string/delete_item"></item>
+		<item android:id="@+id/voteitem" android:title="@string/vote_item"></item>
+	</group>
+</menu>

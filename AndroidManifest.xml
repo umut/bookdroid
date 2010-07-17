@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.hoydaa.bookdroid"
+	android:versionCode="1" android:versionName="1.0">
+	<application android:label="@string/app_name" android:icon="@drawable/books">
+		<receiver android:name=".activity.SmsReceiver" android:enabled="true">
+			<intent-filter>
+				<action android:name="android.provider.Telephony.SMS_RECEIVED" />
+			</intent-filter>
+		</receiver>
+		<provider android:name=".provider.BookdroidProvider" android:authorities="com.hoydaa.bookdroid.provider.Bookdroid" />
+		<activity android:name=".activity.ListBooksActivity" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.EditBookActivity" android:label="@string/book_editor">
+			<intent-filter>
+				<action android:name="android.intent.action.INSERT" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data android:mimeType="vnd.android.cursor.dir/vnd.hoydaa.book" />
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.EDIT" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data android:mimeType="vnd.android.cursor.item/vnd.hoydaa.book" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.SearchBookActivity" android:label="Search Book">
+			<intent-filter>
+				<action android:name="com.hoydaa.bookdroid.SEARCH"/>
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+	</application>
+	<uses-sdk android:minSdkVersion="3" />
+
+
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.RECEIVE_SMS" />
+	<uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+</manifest> 
